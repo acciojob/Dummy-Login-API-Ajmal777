@@ -57,7 +57,7 @@ const LoginForm = () => {
                 <button type='submit' id="submit-form-btn">Submit</button>
             </form>
             {
-                error && <p id="password-error">Password Incorrect</p>
+                error && <p id="user-error">Password Incorrect</p>
             }
             {
                 !error && noUser && <p id="user-error">User not found</p>
