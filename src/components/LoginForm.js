@@ -56,9 +56,7 @@ const LoginForm = () => {
                 <input type='password' value={password} id="input-password" placeholder='password' onChange={(e) => setPassword(e.target.value)} />
                 <button type='submit' id="submit-form-btn">Submit</button>
             </form>
-            {
-                error && <p id="password-error">Password Incorrect</p>
-            }
+            <p id="password-error">{error && "Password Incorrect"}</p>
             <p id="user-error">{noUser && "No user found"}</p>
         </div>
     )
